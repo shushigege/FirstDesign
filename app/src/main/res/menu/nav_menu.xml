@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group
+        android:checkableBehavior="single"
+        >
+        <!-- 将group的checkableBehavior属性设为single（所有菜单项只能单选）。接下来定义了5个菜单项。这样准备好了menu。-->
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/nav_shop"
+            android:title="超市"/>
+        <item
+            android:id="@+id/nav_moment"
+            android:icon="@drawable/nav_moment"
+            android:title="动态"
+            />
+<item
+            android:id="@+id/nav_shopcar"
+            android:icon="@drawable/nav_shopcar"
+            android:title="购物车"/>
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/nav_personal"
+            android:title="个人信息"/>
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/nav_location"
+            android:title="签到定位"/>
+        </group>
+    <group android:checkableBehavior="none"
+        android:id="@+id/group_manage">
+        <item
+            android:id="@+id/nav_manage"
+            android:title="应用管理"
+            android:icon="@drawable/nav_manage"/>
+    </group>
+    <group
+        android:checkableBehavior="none"
+        android:id="@+id/group_settings">
+        <item android:id="@+id/nav_theme"
+            android:title="主题风格"/>
+        <item android:id="@+id/nav_night"
+            android:title="夜间模式"/>
+        <item android:id="@+id/nav_setting"
+            android:title="设置"/>
+        <item android:id="@+id/nav_suggestion"
+            android:title="意见反馈"/>
+        <item android:id="@+id/nav_about"
+            android:title="关于"/>
+</group>
+</menu>

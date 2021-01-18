@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8DE8E6E6"
+    tools:context=".activity.goodShowActivity">
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<ImageView
+                android:id="@+id/image_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="320dp"
+                />
+<TextView
+                android:id="@+id/price_goods_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥79.00"
+                android:textSize="35dp"
+                android:textColor="#e33e33"
+                android:layout_below="@+id/image_goods"/>
+<!--            <ImageView-->
+            <!--                android:id="@+id/type_goods1"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:src="@drawable/cc901"-->
+            <!--                android:layout_below="@+id/image_goods"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_alignBottom="@+id/price_goods_tv"/>-->
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_goods"
+                android:layout_alignParentRight="true"
+                android:textSize="17sp"
+                android:text="小米旗舰店"
+                android:textColor="#252525"
+                android:id="@+id/tv_shopName"/>
+<LinearLayout
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/price_goods_tv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="27sp"
+                    android:textColor="#252525"
+                    android:text="trytrytrytrytrytrty"
+                    android:id="@+id/goods_tv_show"/>
+                <ImageView
+                    android:id="@+id/type_goods2"
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:background="@drawable/goods"
+                    android:layout_centerHorizontal="true"/>
+</LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/market"
+            android:layout_height="40dp"
+            />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/kefu"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/image_shouchang"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:background="@drawable/shouchang"
+            android:layout_gravity="center"
+            android:layout_height="40dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffff"
+            android:background="@drawable/button_style"
+            android:text="加入购物车"
+            android:id="@+id/btn_joinCart"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_style"
+            android:textColor="#ffff"
+            android:text="立即购买"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/btn_buy"/>
+    </LinearLayout>
+</LinearLayout>
